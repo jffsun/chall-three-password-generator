@@ -9,20 +9,27 @@ var passwordLength = window.prompt("How many characters would you like in your p
   
   // Password length requirement 
   while (passwordLength < 8 || passwordLength > 128) {
+
+    // Incorrect length alert
     window.alert("Password must be at least 8 characters and no more than 128 characters.");
+
+    // TO DO: Continue prompt until correct
     var askLength = window.prompt("How many characters would you like in your password?\n*Must be at least 8 characters and no more than 128 characters*");
   }
 
-
+  // Array to hold all possible characters in user's password
   var masterString = []
 
   // Ask lowercase characters
   var lowerChars = "abcdefghijklmnopqrstuvwxyz";
+
+  // Split to separate lowerChars string into array
   lowerCharsSplit = lowerChars.split('');
   askLower = window.confirm("Press OK if you would like lower characters in your password.");
+
+    // If "OK" pressed, add to masterString array
     if (askLower) {
       masterString.push(lowerCharsSplit)
-      console.log("test")
     }
 
   // Ask uppercase characters
@@ -49,29 +56,26 @@ var passwordLength = window.prompt("How many characters would you like in your p
       masterString.push(specialCharsSplit)
     }
 
+  // Concatenates all arrays into one array
   masterString = masterString.flat()
 
   var password = generatePassword(passwordLength, masterString);
 
   }
-  // var Password = generatePassword function
 
+  // Selecting from masterString's possible characters 
   function generatePassword(passwordLength, masterString) {
 
     var result = ""
 
+    // For loop to itterate character selection until password length met
     for (let i=0; i < passwordLength; i++) {
        var charIndex = (Math.floor(Math.random() * masterString.length))
        result += masterString[charIndex]
     }
     
-    
   var passwordText = document.querySelector("#password");
-
   passwordText.value = result;
-
-  // Return password
-  
 
 };
 
