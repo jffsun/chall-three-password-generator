@@ -26,7 +26,7 @@ The following images shows two of the four prompts asked by the application.
 
 
 ### Link to Github Page
-[https://jffsun.github.io/portfolio/](https://jffsun.github.io/portfolio/).
+[https://jffsun.github.io/chall-three-password-generator/](https://jffsun.github.io/chall-three-password-generator/).
 
 ### Link to Github Respository
-[https://github.com/jffsun/portfolio](https://github.com/jffsun/portfolio).
+[https://github.com/jffsun/chall-three-password-generator](https://github.com/jffsun/chall-three-password-generator).
