@@ -19,11 +19,15 @@ The following images show the prompts asking the user for their password's lengt
 
 ### Criteria Prompts  
 
-The following images shows two of the four prompts asked by the application. 
+The application asks four prompts: include lowercase, include uppercase, include numeric, and include special characters. The following images shows two of the four prompts asked by the application. 
 
 ![Lowercase Critera](./assets/images/screenshot4.jpg)
 ![Uppercase Criteria](./assets/images/screenshot5.jpg)
 
+### Criteria Character(s) Guaranteed
+
+The password generated ensures at least one character from each criteria you've selected.
+![Critera Character(s) Guaranteed](./assets/images/screenshot6.jpg)
 
 ### Link to Github Page
 [https://jffsun.github.io/chall-three-password-generator/](https://jffsun.github.io/chall-three-password-generator/).
